@@ -1,0 +1,89 @@
+@use '../variables'
+@use '../mixins'
+
+// ROOT bate com <section className="experience-section">
+.experience-section
+  padding: 2rem 1rem
+  margin-bottom: 3rem
+  color: variables.$text-color
+
+  h2
+    text-align: center
+    margin-bottom: 2rem
+    color: variables.$accent-color
+    font-weight: 700
+    font-size: 1.8rem
+    border-bottom: 2px solid variables.$accent-color
+    display: inline-block
+    padding-bottom: .4rem
+
+  // bate com <div className="experience-list">
+  .experience-list
+    display: flex
+    flex-direction: column
+    gap: 2rem
+
+  // bate com <article className="experience-item">
+  .experience-item
+    background-color: rgba(255, 255, 255, 0.05)
+    border: 1px solid rgba(255, 255, 255, 0.1)
+    border-radius: variables.$card-border-radius
+    padding: 1.5rem
+    transition: all 0.2s ease
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+    &:hover
+      background-color: rgba(255, 255, 255, 0.08)
+      transform: translateY(-3px)
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4)
+
+    // bate com <header className="experience-header">
+    .experience-header
+      display: flex
+      justify-content: space-between
+      align-items: center
+      flex-wrap: wrap
+      margin-bottom: .8rem
+
+      // bate com <h3 className="experience-title">
+      .experience-title
+        font-size: 1.15rem
+        font-weight: 600
+        color: #fff
+
+        // bate com <span className="experience-role">
+        .experience-role
+          font-weight: 400
+          color: variables.$accent-color
+
+      // bate com <span className="experience-period">
+      .experience-period
+        font-size: .9rem
+        opacity: .85
+        color: #aaa
+
+    // bate com <p className="experience-summary">
+    .experience-summary
+      margin-bottom: .8rem
+      color: #ddd
+      font-size: .95rem
+
+    // bate com <ul className="experience-bullets">
+    .experience-bullets
+      margin: 0
+      padding-left: 1.2rem
+      list-style: disc
+      color: #ccc
+      font-size: .95rem
+
+      li
+        margin-bottom: .4rem
+
+    // bate com <div className="experience-techs">
+    .experience-techs
+      margin-top: .8rem
+      font-size: .95rem
+      color: variables.$accent-color
+
+      strong
+        color: #fff
